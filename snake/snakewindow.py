@@ -22,7 +22,7 @@ class SnakeWindow(QMainWindow):
         self.resize(square_size * field.width, 
                     square_size * field.height)
         size = self.geometry()
-        self.move((screen.width() - size.width()) / 2, 
-                  (screen.height() - size.height()) / 2)
+        self.move((screen.width() - size.width()) // 2, 
+                  (screen.height() - size.height()) // 2)
         self.show()
         return
